@@ -1,0 +1,16 @@
+// manifest.json
+{
+    "manifest_version": 3,
+    "name": "Custom Header Injector",
+    "version": "1.0",
+    "description": "Adds SFTCAPTCHA header with value KATALON to all requests",
+    "permissions": [
+      "declarativeNetRequest"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
