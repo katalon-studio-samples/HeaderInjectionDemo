@@ -1,16 +1,21 @@
-// manifest.json
 {
     "manifest_version": 3,
-    "name": "Custom Header Injector",
-    "version": "1.0",
-    "description": "Adds SFTCAPTCHA header with value KATALON to all requests",
+    "name": "Katalon Header Injector",
+    "version": "2.0",
+    "description": "Adds custom headers to all requests",
     "permissions": [
       "declarativeNetRequest"
     ],
+    "declarative_net_request": {
+        "rule_resources": [
+          {
+            "id": "ruleset_1",
+            "enabled": true,
+            "path": "rules.json"
+          }
+        ]
+      },    
     "host_permissions": [
       "<all_urls>"
-    ],
-    "background": {
-      "service_worker": "background.js"
-    }
+    ]
   }
