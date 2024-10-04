@@ -75,7 +75,8 @@ class CustomWebDriver {
 	}
 
 	/**
-	 * Refresh browser
+	 * Open Chrome browser and inject an extension to modify HTTP headers. Sets the active WebDriver for WebUI methods.
+	 * @param customHeaders map of header names and values
 	 */
 	@Keyword(keywordObject = "Browser")
 	def openBrowserWithHeaders(Map<String, String> customHeaders) {
