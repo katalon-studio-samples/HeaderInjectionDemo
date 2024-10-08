@@ -32,3 +32,8 @@ groovydoc {
 
 dependencies {
 }
+
+katalon {
+    dependencyPrefix = "com.katalon"
+    minimize = false
+}
